@@ -4,7 +4,9 @@ import { FaXTwitter, FaGithub } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-700 text-gray-300 py-12 px-6 md:px-16 transition-all duration-300">
+    // <footer className="bg-gray-600 text-gray-200 py-12 px-6 md:px-16 transition-all duration-300">
+    <footer className="bg-gradient-to-r from-gray-800 via-gray-800 to-black text-gray-300 py-12 px-6 md:px-16 transition-all duration-300">
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
 
         <div className="md:col-span-1">
