@@ -4,25 +4,25 @@ const WhoItsFor = () => {
   const data = [
     {
       title: "Donors",
-      image: "/images/donor.webp",
+      image: "/images/donor1.jpg",
       description:
         "Companies seeking to make a meaningful, measurable impact through strategic ESG initiatives.",
     },
     {
       title: "Vendors",
-      image: "/images/vendor.png",
+      image: "/images/vendor1.png",
       description:
         "Suppliers of educational products and services aiming to connect with schools and projects.",
     },
     {
       title: "Schools",
-      image: "/images/school.png",
+      image: "/images/school1.jpg",
       description:
         "Educational institutions in need of resources and support for their students and programs.",
     },
     {
       title: "Admins",
-      image: "/images/admin.jpg",
+      image: "/images/admin1.jpg",
       description:
         "Platform administrators managing the network and ensuring smooth, secure operations.",
     },
