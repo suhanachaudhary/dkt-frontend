@@ -15,10 +15,10 @@ const LoginGateway = () => {
 
         <div className="flex flex-wrap justify-center gap-5">
           {[
-            { label: "Donor", path: "/donor-login" },
-            { label: "Vendor", path: "/vendor-login" },
-            { label: "School", path: "/school-login" },
-            { label: "Admin", path: "/admin-login" },
+            { label: "Donor", path: "https://digital-k-tech.vercel.app/auth/sign-in" },
+            { label: "Vendor", path: "https://digital-k-tech.vercel.app/auth/sign-in" },
+            { label: "School", path: "https://digital-k-tech.vercel.app/auth/sign-in" },
+            { label: "Admin", path: "https://digital-k-tech.vercel.app/auth/sign-in" },
           ].map((item, index) => (
             <Link to={item.path} key={index}>
               <button

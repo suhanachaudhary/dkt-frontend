@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-20 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        
+
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight transition-all duration-500">
             Empowering Schools Through{" "}
@@ -31,7 +31,7 @@ const HeroSection = () => {
 
         <div className="md:w-1/2">
           <img
-            src="/images/herosection.jpg"
+            src="/images/hero111.jpeg"
             alt="Hero"
             className="w-full max-w-md mx-auto rounded-xl animate-float"
           />

@@ -10,25 +10,25 @@ const Navbar = () => {
   const navLinks = [
     { path: "/about", label: "About Us" },
     { path: "/how-it-works", label: "How it works" },
-    { path: "/login-gateway", label: "Login" },
+    { path: "https://digital-k-tech.vercel.app/auth/sign-in", label: "Login" },
     { path: "/contact", label: "Contact Us" },
   ];
 
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-md sticky top-0 z-50 py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between items-center h-16">
-          
+
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="items-center space-x-2">
               <img
-                src="/images/logo1.png"
+                src="/images/logo103.PNG"
                 alt="DKT Logo"
-                className="w-10 h-10 drop-shadow-md"
+                className="w-18 h-14"
               />
-              <span className="font-semibold text-lg text-gray-900">DKT</span>
+              <span className="font-semibold text-lg text-gray-900">Digital K</span>
             </Link>
           </div>
 
@@ -37,9 +37,8 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative transition duration-300 hover:text-black ${
-                  isActive(link.path) ? "text-gray-700" : ""
-                }`}
+                className={`relative transition duration-300 hover:text-black ${isActive(link.path) ? "text-gray-700" : ""
+                  }`}
               >
                 {link.label}
                 {isActive(link.path) && (
@@ -74,9 +73,8 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`block py-1 transition hover:text-black ${
-                isActive(link.path) ? "text-green-600" : ""
-              }`}
+              className={`block py-1 transition hover:text-black ${isActive(link.path) ? "text-green-600" : ""
+                }`}
               onClick={() => setOpen(false)}
             >
               {link.label}
