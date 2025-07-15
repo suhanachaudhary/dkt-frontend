@@ -48,16 +48,16 @@ const steps = [
 ];
 
 const HowItWorksPage = () => {
-    const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null);
 
-    const toggleFAQ = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <div className="min-h-screen bg-gray-50 px-6 md:px-20 py-16 text-gray-800">
       <div className="max-w-6xl mx-auto">
-    
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-600 mb-4">
+
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#WCAGAA] mb-4">
           How Our Platform Works
         </h1>
         <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-16">
@@ -78,29 +78,29 @@ const HowItWorksPage = () => {
               <h3 className="text-lg font-semibold text-gray-600 mb-2">
                 {step.title}
               </h3>
-              <p className="text-sm text-gray-600">{step.description}</p>
+              <p className="text-[16px] text-gray-600">{step.description}</p>
             </div>
           ))}
         </div>
 
         <div className="mb-20">
-          <h2 className="text-3xl font-semibold text-center text-gray-600 mb-6">Why Choose Us?</h2>
+          <h2 className="text-3xl font-semibold text-center text-[#WCAGAA] mb-6">Why Choose Us?</h2>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-gray-600 font-bold mb-2">Verified Partners</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-gray-600 text-xl font-bold mb-2">Verified Partners</h3>
+              <p className="text-[16px] text-gray-600">
                 All vendors and schools go through a strict verification process ensuring reliability.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-gray-600 font-bold mb-2">Transparent Tracking</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-gray-600 text-xl font-bold mb-2">Transparent Tracking</h3>
+              <p className="text-[16px] text-gray-600">
                 Know exactly where your donation goes with real-time updates and progress reports.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-gray-600 font-bold mb-2">End-to-End Support</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-gray-600 text-xl font-bold mb-2">End-to-End Support</h3>
+              <p className="text-[16px] text-gray-600">
                 From school onboarding to delivery logistics, we manage everything — you just focus on impact.
               </p>
             </div>
@@ -108,47 +108,47 @@ const HowItWorksPage = () => {
         </div>
 
         <div className="mb-20 bg-white p-10 rounded-xl shadow-md text-center">
-          <h2 className="text-3xl font-semibold text-gray-600 mb-6">Our Impact So Far</h2>
+          <h2 className="text-3xl font-semibold text-[#WCAGAA] mb-6">Our Impact So Far</h2>
           <div className="grid sm:grid-cols-3 gap-8">
             <div>
               <h3 className="text-4xl font-bold text-gray-600">500+</h3>
-              <p className="text-sm text-gray-600">Schools Supported</p>
+              <p className="text-[16px] text-gray-600">Schools Supported</p>
             </div>
             <div>
               <h3 className="text-4xl font-bold text-gray-600">100+</h3>
-              <p className="text-sm text-gray-600">CSR Donors</p>
+              <p className="text-[16px] text-gray-600">CSR Donors</p>
             </div>
             <div>
               <h3 className="text-4xl font-bold text-gray-600">20K+</h3>
-              <p className="text-sm text-gray-600">Students Benefited</p>
+              <p className="text-[16px] text-gray-600">Students Benefited</p>
             </div>
           </div>
         </div>
 
 
         <div className="mb-20">
-        <h2 className="text-3xl font-semibold text-center text-gray-600 mb-8">
+          <h2 className="text-3xl font-semibold text-center text-[#WCAGAA] mb-8">
             Frequently Asked Questions
-        </h2>
-        <div className="space-y-4">
+          </h2>
+          <div className="space-y-4">
             {faqs.map((faq, index) => (
-            <div
+              <div
                 key={index}
                 className="bg-white rounded-xl shadow transition hover:shadow-md cursor-pointer"
                 onClick={() => toggleFAQ(index)}
-            >
+              >
                 <div className="p-5 flex justify-between items-center">
-                <h4 className="text-gray-600 font-medium">{faq.question}</h4>
-                <span className="text-gray-500 text-xl">
+                  <h4 className="text-gray-600 font-medium">{faq.question}</h4>
+                  <span className="text-gray-500 text-xl">
                     {openIndex === index ? "−" : "+"}
-                </span>
+                  </span>
                 </div>
                 {openIndex === index && (
-                <div className="px-5 pb-4 text-sm text-gray-600">{faq.answer}</div>
+                  <div className="px-5 pb-4 text-[16px] text-gray-600">{faq.answer}</div>
                 )}
-            </div>
+              </div>
             ))}
-        </div>
+          </div>
         </div>
 
         <div className="text-center mt-20">

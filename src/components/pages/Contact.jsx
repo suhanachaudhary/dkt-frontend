@@ -19,10 +19,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gray-50 px-6 md:px-20 py-16 text-gray-800">
+    <section className="min-h-screen bg-gray-50 px-6 md:px-20 py-16 text-[#WCAGAA]">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-10">
-        <h1 className="text-3xl font-bold text-gray-600 mb-4 text-center">Contact Us</h1>
-        <p className="text-gray-600 mb-8">
+        <h1 className="text-5xl font-bold text-[#wcagaa] mb-4 text-center">Contact Us</h1>
+        <p className="text-gray-600 mb-8 text-[16px]">
           Have questions or want to collaborate with us? We'd love to hear from you.
           Fill out the form or use the contact details below.
         </p>
@@ -31,7 +31,7 @@ const Contact = () => {
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <label className="block text-[16px] font-medium text-gray-700 mb-1">Name</label>
               <input
                 type="text"
                 name="name"
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <label className="block text-[16px] font-medium text-gray-700 mb-1">Email</label>
               <input
                 type="email"
                 name="email"
@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <label className="block text-[16px] font-medium text-gray-700 mb-1">Message</label>
               <textarea
                 name="message"
                 rows="4"
@@ -68,7 +68,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-medium transition"
+              className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-medium transition text-xl"
             >
               Send Message
             </button>
@@ -78,17 +78,17 @@ const Contact = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-600 mb-1">Email</h3>
-              <p className="text-gray-700 text-sm">support@dktplatform.com</p>
+              <p className="text-gray-700 text-[16px]">support@dktplatform.com</p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-600 mb-1">Phone</h3>
-              <p className="text-gray-700 text-sm">+91 9876543210</p>
+              <p className="text-gray-700 text-[16px]">+91 9876543210</p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-600 mb-1">Address</h3>
-              <p className="text-gray-700 text-sm">
+              <p className="text-gray-700 text-[16px]">
                 DKT Foundation,<br />
                 2nd Floor, Impact Tower,<br />
                 Sector 63, Noida, UP 201301

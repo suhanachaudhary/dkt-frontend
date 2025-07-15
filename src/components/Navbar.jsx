@@ -32,7 +32,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
+          <div className="hidden md:flex items-center space-x-8 text-[16px] font-medium text-gray-700">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -50,7 +50,7 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             <Link to="/get-started">
-              <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-md">
+              <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full text-xl transition-all duration-300 hover:scale-105 shadow-md">
                 Donate Now
               </button>
             </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
           ))}
 
           <Link to="/get-started" onClick={() => setOpen(false)}>
-            <button className="mt-2 bg-green-500 hover:bg-green-600 hover:scale-105 text-white w-full py-2 rounded-full text-sm transition-all duration-300 shadow">
+            <button className="mt-2 bg-green-500 hover:bg-green-600 hover:scale-105 text-white w-full py-2 rounded-full text-xl transition-all duration-300 shadow">
               Donate Now
             </button>
           </Link>

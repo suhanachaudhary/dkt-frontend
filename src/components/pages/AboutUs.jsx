@@ -59,25 +59,25 @@ const AboutUs = () => {
   const sliderRef = useRef(null);
   const extendedTeam = [...team, ...team];
 
-  
+
   return (
     <div className="min-h-screen bg-gray-50 px-6 md:px-1 py-20 text-gray-800">
       <div className="max-w-5xl mx-auto">
 
-        <h1 className="text-4xl font-bold text-gray-600 mb-4 animate-fade-in text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#WCAGAA] mb-4 animate-fade-in text-center">
           About Us
         </h1>
-        <p className="text-lg mb-10 leading-relaxed animate-slide-up delay-200">
+        <p className="text-[16px] mb-10 leading-relaxed animate-slide-up delay-200">
           We are a passionate team dedicated to providing seamless digital
           solutions for modern problems. Our goal is to deliver user-friendly
           and scalable products that make a real impact in the world.
         </p>
 
         <div className="bg-white p-6 rounded-xl shadow-lg mb-10 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] animate-fade-in delay-300">
-          <h2 className="text-2xl font-semibold text-gray-500 mb-3 text-center">
+          <h2 className="text-2xl font-semibold text-[#WCAGAA] mb-3 text-center">
             Our Mission
           </h2>
-          <p className="text-base">
+          <p className="text-[16px]">
             To simplify complex workflows and help businesses grow with
             technology-driven solutions. We believe in innovation, transparency,
             and user satisfaction.
@@ -85,7 +85,7 @@ const AboutUs = () => {
         </div>
 
         <section className="py-20 px-2 md:px-20">
-          <h2 className="text-2xl text-center font-semibold text-gray-500 mb-6 animate-fade-in delay-400">
+          <h2 className="text-3xl text-center font-semibold text-[#WCAGAA] mb-6 animate-fade-in delay-400">
             Meet Our Team
           </h2>
 
@@ -99,7 +99,7 @@ const AboutUs = () => {
             {extendedTeam.map((member, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-72 bg-white rounded-2xl shadow-lg p-6 transform hover:-translate-y-2 hover:rotate-1 hover:scale-[1.03] transition-all duration-500 text-center group"
+                className="flex-shrink-0 w-72 bg-white rounded-2xl shadow-lg p-6 transform transition-all duration-500 text-center group"
               >
                 <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-100 group-hover:border-gray-400 transition">
                   <img
@@ -108,11 +108,11 @@ const AboutUs = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
-                <p className="text-sm text-gray-600 mb-4">{member.role}</p>
+                <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
+                <p className="text-[16px] text-gray-600 mb-4">{member.role}</p>
 
                 {/* Social icons */}
-                <div className="flex justify-center gap-4 text-gray-500 group-hover:text-gray-600 transition">
+                <div className="flex justify-center gap-4 text-gray-500 group-hover:text-gray-700 text-xl transition">
                   <a
                     href={member.linkedin}
                     target="_blank"
@@ -143,7 +143,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        
+
         <p className="text-center text-sm text-gray-500 mt-16 animate-fade-in delay-500">
           Empowering innovation, one solution at a time. 💡
         </p>

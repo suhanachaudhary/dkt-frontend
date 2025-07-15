@@ -32,8 +32,8 @@ const WhoItsFor = () => {
   const repeatedData = [...data, ...data];
 
   return (
-    <section id="who" className="bg-white py-20 px-6 md:px-6">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-600 mb-12">
+    <section id="who" className="bg-white py-20 md:px-6">
+      <h2 className="text-4xl md:text-4xl font-bold text-center text-[#WCAGAA] mb-12">
         Who It's For
       </h2>
 
@@ -47,7 +47,7 @@ const WhoItsFor = () => {
           {repeatedData.map((item, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-72 bg-gray-50 rounded-2xl p-6 shadow-md transform transition-all duration-500 hover:-translate-y-2 hover:scale-105 hover:rotate-[1deg]"
+              className="flex-shrink-0 w-72 bg-gray-50 rounded-2xl p-6 shadow-md transform transition-all duration-500"
             >
               <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden shadow border-4 border-gray-100 hover:border-gray-400 transition duration-300">
                 <img
@@ -56,10 +56,10 @@ const WhoItsFor = () => {
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-center text-gray-800 mb-2 hover:text-gray-600 transition">
+              <h3 className="text-xl font-semibold text-center text-[#WCAGAA] mb-2 hover:text-gray-600 transition">
                 {item.title}
               </h3>
-              <p className="text-sm text-center text-gray-600">
+              <p className="text-[16px] text-center text-gray-600">
                 {item.description}
               </p>
             </div>

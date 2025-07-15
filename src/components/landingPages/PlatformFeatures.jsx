@@ -19,7 +19,7 @@ const features = [
   {
     title: "Delivery & Reconciliation",
     description:
-      "Ensure seamless product delivery and financial reconciliation with our integrated system.",
+      "Ensure seamless product delivery with our integrated system.",
     icon: <FaTruck className="text-white text-xl" />,
   },
   {
@@ -59,13 +59,13 @@ const sliderSettings = {
   arrows: true,
   responsive: [
     {
-      breakpoint: 1024, 
+      breakpoint: 1024,
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 640, 
+      breakpoint: 640,
       settings: {
         slidesToShow: 1,
       },
@@ -75,25 +75,25 @@ const sliderSettings = {
 
 const PlatformFeatures = () => {
   return (
-    <section id="features" className="bg-gray-100 py-16 px-6 md:px-20">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-600 mb-12">
+    <section id="features" className="bg-[#AAA] py-16 px-6 md:px-20">
+      <h2 className="text-4xl md:text-4xl font-bold text-center text-[#WCAGAA] mb-12">
         Platform Features
       </h2>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Slider {...sliderSettings}>
           {features.map((item, index) => (
-            <div key={index} className="px-4">
-              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 h-full">
+            <div key={index} className="px-4 w-full box-border">
+              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform  h-full">
                 <div className="w-14 h-14 mb-4 bg-gray-100 rounded-full flex items-center justify-center mx-auto transition">
                   <div className="bg-gray-500 p-3 rounded-full shadow group-hover:scale-110 transition-transform">
                     {item.icon}
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800 text-center mb-2 group-hover:text-gray-600 transition">
+                <h3 className="text-xl font-semibold text-[#WCAGAA] text-center mb-2 transition">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 text-center group-hover:text-gray-700 transition">
+                <p className="text-[16px] text-gray-600 text-center group-hover:text-gray-700 transition">
                   {item.description}
                 </p>
               </div>

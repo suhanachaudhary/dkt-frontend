@@ -5,10 +5,10 @@ import HowItWorks from "./HowItWorks";
 import LoginGateway from "./LoginGateway";
 import PlatformFeatures from "./PlatformFeatures";
 import WhoItsFor from "./WhoItsFor";
-function Main(){
-    return(
+function Main() {
+    return (
         <>
-            <section id="about" className="scroll-mt-20">
+            <section id="about" className="scroll">
                 <HeroSection />
             </section>
             <section id="how-it-works" className="scroll-mt-20">
