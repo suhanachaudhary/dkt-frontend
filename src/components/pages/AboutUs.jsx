@@ -61,7 +61,7 @@ const AboutUs = () => {
 
 
   return (
-    <div className="min-h-screen bg-gray-50 px-6 md:px-1 py-20 text-gray-800">
+    <section id="about" className="min-h-screen scroll-mt-24 mt-16 px-6 md:px-1 py-20 text-gray-800">
       <div className="max-w-5xl mx-auto">
 
         <h1 id="aboutUs" className="text-4xl md:text-5xl font-bold text-[#WCAGAA] mb-4 animate-fade-in text-center">
@@ -148,7 +148,7 @@ const AboutUs = () => {
           Empowering innovation, one solution at a time. 💡
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

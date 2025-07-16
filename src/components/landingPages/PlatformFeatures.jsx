@@ -76,7 +76,7 @@ const sliderSettings = {
 const PlatformFeatures = () => {
   return (
     <section id="features" className="bg-[#AAA] py-16 px-6 md:px-20">
-      <h2 className="text-4xl md:text-4xl font-bold text-center text-[#WCAGAA] mb-12">
+      <h2 id="features" className="text-4xl md:text-4xl font-bold text-center text-[#WCAGAA] mb-12">
         Platform Features
       </h2>
 

@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: #2e2e2e !important;

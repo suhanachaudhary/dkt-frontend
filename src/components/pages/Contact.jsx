@@ -19,9 +19,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gray-50 px-6 md:px-20 py-16 text-[#WCAGAA]">
+    <section className="min-h-screen mt-12 px-6 md:px-20 py-16 text-[#WCAGAA]">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-10">
-        <h1 id="contact" className="text-5xl font-bold text-[#wcagaa] mb-4 text-center">Contact Us</h1>
+        <h1 id="contact" className="md:text-5xl text-4xl font-bold text-[#wcagaa] mb-4 text-center">Contact Us</h1>
         <p className="text-gray-600 mb-8 text-[16px]">
           Have questions or want to collaborate with us? We'd love to hear from you.
           Fill out the form or use the contact details below.

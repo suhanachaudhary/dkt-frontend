@@ -54,7 +54,7 @@ const HowItWorksPage = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="min-h-screen bg-gray-50 px-6 md:px-20 py-16 text-gray-800">
+    <div className="min-h-screen mt-28 px-6 md:px-20 py-16 text-gray-800">
       <div className="max-w-6xl mx-auto">
 
         <h1 id="how-works" className="text-4xl md:text-5xl font-bold text-center text-[#WCAGAA] mb-4">

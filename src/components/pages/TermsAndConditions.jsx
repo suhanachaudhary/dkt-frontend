@@ -1,9 +1,9 @@
 
 const TermsAndConditions = () => {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 px-6 md:px-20 py-10">
+    <div className="min-h-screen mt-16 text-gray-800 px-6 md:px-20 py-10">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-10">
-        <h1 id="terms-condition" className="text-4xl font-bold text-[#WCAGAA] mb-6 text-center">Terms & Conditions</h1>
+        <h1 id="terms-condition" className="text-4xl md:text-5xl font-bold text-[#WCAGAA] mb-6 text-center">Terms & Conditions</h1>
         <p className="text-[16px] mb-4">
           These Terms and Conditions ("Terms") govern your use of our website and services. By accessing or using the platform, you agree to these Terms.
         </p>
