@@ -28,11 +28,11 @@ const Navbar = () => {
                 alt="DKT Logo"
                 className="w-18 h-14"
               />
-              <span className="font-semibold text-lg text-gray-900">Digital K</span>
+              <span id="logo" className="font-semibold text-lg text-gray-900">Digital K</span>
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8 text-[16px] font-medium text-gray-700">
+          <div className="hidden md:flex items-center space-x-8 text-xl font-medium text-gray-700">
             {navLinks.map((link) => (
               <Link
                 key={link.path}

@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
         <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
-          <h1 className="text-5xl md:text-5xl font-extrabold text-slate-900 leading-tight transition-all duration-500">
+          <h1 id="schools" className="text-5xl md:text-5xl font-extrabold text-slate-900 leading-tight transition-all duration-500">
             Empowering Schools Through{" "}
             <span className="text-[#AAA]">Smart CSR Donations</span>
           </h1>
@@ -32,7 +32,7 @@ const HeroSection = () => {
         <div className="md:w-1/2 order-1 md:order-2">
           <img
             src="/images/hero111.jpeg"
-            alt="Hero"
+            alt="Heroi-image"
             className="w-full max-w-md mx-auto rounded-xl animate-float"
           />
         </div>

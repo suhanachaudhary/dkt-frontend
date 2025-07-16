@@ -5,7 +5,7 @@ const LoginGateway = () => {
   return (
     <section id="login-gateway" className="py-16 px-6 md:px-20 bg-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-4xl font-bold text-[#WCAGAA] mb-4 transition-all duration-500">
+        <h2 id="login" className="text-4xl md:text-4xl font-bold text-[#WCAGAA] mb-4 transition-all duration-500">
           Login Gateway
         </h2>
         <p className="text-gray-600 mb-10 text-[16px] md:text-[18px] max-w-2xl mx-auto transition-opacity duration-500">

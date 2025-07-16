@@ -31,7 +31,7 @@ const HowItWorks = () => {
 
   return (
     <section className="bg-[#AAA] py-16 px-4 md:px-20">
-      <h2 className="text-center text-4xl md:text-4xl font-bold text-[#WCAGAA] mb-12">
+      <h2 id="how-works" className="text-center text-4xl md:text-4xl font-bold text-[#WCAGAA] mb-12">
         How It Works
       </h2>
 
@@ -47,7 +47,7 @@ const HowItWorks = () => {
               </div>
               <div className="absolute inset-0 rounded-full animate-pulse bg-green-200 opacity-0 group-hover:opacity-20 transition" />
             </div>
-            <h3 className="font-semibold text-xl text-gray-900 transition mb-2">
+            <h3 id="title-step" className="font-semibold text-xl text-gray-900 transition mb-2">
               {step.title}
             </h3>
             <p className="text-[16px] text-gray-600 group-hover:text-gray-700 transition">

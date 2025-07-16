@@ -64,7 +64,7 @@ const AboutUs = () => {
     <div className="min-h-screen bg-gray-50 px-6 md:px-1 py-20 text-gray-800">
       <div className="max-w-5xl mx-auto">
 
-        <h1 className="text-4xl md:text-5xl font-bold text-[#WCAGAA] mb-4 animate-fade-in text-center">
+        <h1 id="aboutUs" className="text-4xl md:text-5xl font-bold text-[#WCAGAA] mb-4 animate-fade-in text-center">
           About Us
         </h1>
         <p className="text-[16px] mb-10 leading-relaxed animate-slide-up delay-200">
@@ -74,7 +74,7 @@ const AboutUs = () => {
         </p>
 
         <div className="bg-white p-6 rounded-xl shadow-lg mb-10 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] animate-fade-in delay-300">
-          <h2 className="text-2xl font-semibold text-[#WCAGAA] mb-3 text-center">
+          <h2 id="mission" className="text-2xl font-semibold text-[#WCAGAA] mb-3 text-center">
             Our Mission
           </h2>
           <p className="text-[16px]">
@@ -85,7 +85,7 @@ const AboutUs = () => {
         </div>
 
         <section className="py-20 px-2 md:px-20">
-          <h2 className="text-3xl text-center font-semibold text-[#WCAGAA] mb-6 animate-fade-in delay-400">
+          <h2 id="team" className="text-3xl text-center font-semibold text-[#WCAGAA] mb-6 animate-fade-in delay-400">
             Meet Our Team
           </h2>
 

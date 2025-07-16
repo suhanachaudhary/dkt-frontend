@@ -57,7 +57,7 @@ const HowItWorksPage = () => {
     <div className="min-h-screen bg-gray-50 px-6 md:px-20 py-16 text-gray-800">
       <div className="max-w-6xl mx-auto">
 
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#WCAGAA] mb-4">
+        <h1 id="how-works" className="text-4xl md:text-5xl font-bold text-center text-[#WCAGAA] mb-4">
           How Our Platform Works
         </h1>
         <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-16">
@@ -75,7 +75,7 @@ const HowItWorksPage = () => {
                   {step.icon}
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-600 mb-2">
+              <h3 id="title" className="text-lg font-semibold text-gray-600 mb-2">
                 {step.title}
               </h3>
               <p className="text-[16px] text-gray-600">{step.description}</p>
@@ -87,19 +87,19 @@ const HowItWorksPage = () => {
           <h2 className="text-3xl font-semibold text-center text-[#WCAGAA] mb-6">Why Choose Us?</h2>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-gray-600 text-xl font-bold mb-2">Verified Partners</h3>
+              <h3 id="verified-partner" className="text-gray-600 text-xl font-bold mb-2">Verified Partners</h3>
               <p className="text-[16px] text-gray-600">
                 All vendors and schools go through a strict verification process ensuring reliability.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-gray-600 text-xl font-bold mb-2">Transparent Tracking</h3>
+              <h3 id="tracking" className="text-gray-600 text-xl font-bold mb-2">Transparent Tracking</h3>
               <p className="text-[16px] text-gray-600">
                 Know exactly where your donation goes with real-time updates and progress reports.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-gray-600 text-xl font-bold mb-2">End-to-End Support</h3>
+              <h3 id="support" className="text-gray-600 text-xl font-bold mb-2">End-to-End Support</h3>
               <p className="text-[16px] text-gray-600">
                 From school onboarding to delivery logistics, we manage everything — you just focus on impact.
               </p>
@@ -108,7 +108,7 @@ const HowItWorksPage = () => {
         </div>
 
         <div className="mb-20 bg-white p-10 rounded-xl shadow-md text-center">
-          <h2 className="text-3xl font-semibold text-[#WCAGAA] mb-6">Our Impact So Far</h2>
+          <h2 id="impact" className="text-3xl font-semibold text-[#WCAGAA] mb-6">Our Impact So Far</h2>
           <div className="grid sm:grid-cols-3 gap-8">
             <div>
               <h3 className="text-4xl font-bold text-gray-600">500+</h3>
@@ -127,7 +127,7 @@ const HowItWorksPage = () => {
 
 
         <div className="mb-20">
-          <h2 className="text-3xl font-semibold text-center text-[#WCAGAA] mb-8">
+          <h2 id="questionary" className="text-3xl font-semibold text-center text-[#WCAGAA] mb-8">
             Frequently Asked Questions
           </h2>
           <div className="space-y-4">
@@ -152,7 +152,7 @@ const HowItWorksPage = () => {
         </div>
 
         <div className="text-center mt-20">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 id="ready-to-join" className="text-2xl font-semibold text-gray-800 mb-4">
             Ready to Join the Movement?
           </h2>
           <a

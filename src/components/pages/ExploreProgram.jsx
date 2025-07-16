@@ -64,7 +64,7 @@ const ExploreProgram = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-20">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-green-500 mb-6">
+        <h2 id="programs" className="text-3xl md:text-5xl font-bold text-green-500 mb-6">
           Explore Our Programs
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -93,7 +93,7 @@ const ExploreProgram = () => {
 
         {/* CTA */}
         <div className="mt-16 bg-green-50 p-8 rounded-lg">
-          <h3 className="text-2xl font-semibold text-slate-900 mb-3">
+          <h3 id="impact_program" className="text-2xl font-semibold text-slate-900 mb-3">
             Ready to Make an Impact?
           </h3>
           <p className="text-gray-600 max-w-xl mx-auto mb-6">

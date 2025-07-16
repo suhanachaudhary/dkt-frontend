@@ -3,7 +3,7 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 px-6 md:px-20 py-10">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-10">
-        <h1 className="text-4xl font-bold text-[#WCAGAA] mb-6 text-center">Privacy Policy</h1>
+        <h1 id="privacy-policy" className="text-4xl font-bold text-[#WCAGAA] mb-6 text-center">Privacy Policy</h1>
         <p className="text-[16px] mb-4">
           This Privacy Policy describes how we collect, use, and protect your personal information when you use our platform.
         </p>

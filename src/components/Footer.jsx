@@ -17,7 +17,7 @@ const Footer = () => {
                 alt="DKT Logo"
                 className="w-18 h-14"
               />
-              <span className="font-semibold text-lg text-white">Digital K</span>
+              <span id="logo" className="font-semibold text-lg text-white">Digital K</span>
             </Link>
           </div>
           <p className="text-[16px] leading-relaxed text-gray-400 hover:text-gray-300 transition">
