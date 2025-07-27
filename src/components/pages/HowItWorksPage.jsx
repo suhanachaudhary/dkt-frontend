@@ -1,6 +1,12 @@
 
 import { useState } from "react";
-import { FaSchool, FaHandshake, FaDonate, FaChartLine } from "react-icons/fa";
+import {
+  FaUserTie,
+  FaTruckLoading,
+  FaTags,
+  FaLaptop,
+  FaChartBar
+} from "react-icons/fa";
 
 const faqs = [
   {
@@ -22,28 +28,34 @@ const faqs = [
 
 const steps = [
   {
-    title: "Step 1: Select a School",
+    title: "Step 1: Corporates Commit",
     description:
-      "Explore verified schools participating in CSR. Each profile includes goals, needs, and impact areas.",
-    icon: <FaSchool className="text-white text-2xl" />,
+      "Donors register and pledge funds or devices.",
+    icon: <FaUserTie className="text-white text-2xl" />,
   },
   {
-    title: "Step 2: Choose a Vendor",
+    title: "Step 2: We Procure or Collect",
     description:
-      "Pick from curated vendors specializing in educational tools, digital infrastructure, and classroom solutions.",
-    icon: <FaHandshake className="text-white text-2xl" />,
+      "Devices are sourced from vendors or picked up.",
+    icon: <FaTruckLoading className="text-white text-2xl" />,
   },
   {
-    title: "Step 3: Make a Donation",
+    title: "Step 3: Devices Are Classified",
     description:
-      "Donate securely with real-time fund tracking and confirmation. We ensure full transparency.",
-    icon: <FaDonate className="text-white text-2xl" />,
+      "Assets are tagged REU, REP, or REC.",
+    icon: <FaTags className="text-white text-2xl" />,
   },
   {
-    title: "Step 4: Track Your Impact",
+    title: "Step 4: Delivery & Installation",
     description:
-      "Receive reports, pictures, and performance updates showing exactly where and how your donation helped.",
-    icon: <FaChartLine className="text-white text-2xl" />,
+      "Laptops/PCs with AI software reach schools.",
+    icon: <FaLaptop className="text-white text-2xl" />,
+  },
+  {
+    title: "Step 5: Track, Report & Certify",
+    description:
+      "Real-time dashboards and CSR impact reports.",
+    icon: <FaChartBar className="text-white text-2xl" />,
   },
 ];
 
@@ -60,11 +72,11 @@ const HowItWorksPage = () => {
         <h1 id="how-works" className="text-4xl md:text-5xl font-bold text-center text-[#WCAGAA] mb-4">
           How Our Platform Works
         </h1>
-        <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-16">
-          A streamlined, transparent, and trustworthy process to connect donors, vendors, and schools for real educational impact.
+        <p className="text-center text-2xl mt-6 text-gray-600 max-w-3xl mx-auto mb-16">
+          In 5 Simple Steps.
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-20">
           {steps.map((step, index) => (
             <div
               key={index}

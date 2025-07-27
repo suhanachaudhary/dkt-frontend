@@ -62,9 +62,9 @@ const sliderSettings = {
 
 const ExploreProgram = () => {
   return (
-    <section className="bg-white py-20 px-6 md:px-20">
+    <section className="min-h-screen mt-28 px-6 md:px-20 py-16 text-gray-800">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 id="programs" className="text-3xl md:text-5xl font-bold text-green-500 mb-6">
+        <h2 id="programs" className="text-4xl md:text-5xl font-bold text-center text-[#WCAGAA] mb-4">
           Explore Our Programs
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -99,7 +99,7 @@ const ExploreProgram = () => {
           <p className="text-gray-600 max-w-xl mx-auto mb-6">
             Your contribution can empower thousands of students. Choose a program and become a changemaker today.
           </p>
-          <a href="/get-started">
+          <a href="/">
             <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300">
               Get Started
             </button>

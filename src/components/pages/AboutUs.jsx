@@ -65,22 +65,24 @@ const AboutUs = () => {
       <div className="max-w-5xl mx-auto">
 
         <h1 id="aboutUs" className="text-4xl md:text-5xl font-bold text-[#WCAGAA] mb-4 animate-fade-in text-center">
-          About Us
+          Who We Are
         </h1>
         <p className="text-[16px] mb-10 leading-relaxed animate-slide-up delay-200">
-          We are a passionate team dedicated to providing seamless digital
-          solutions for modern problems. Our goal is to deliver user-friendly
-          and scalable products that make a real impact in the world.
+          Digital K Tech (DKT) is a mission-driven platform that empowers underserved students and institutions through responsible tech donations, CSR partnerships, and sustainability-first practices.
         </p>
 
         <div className="bg-white p-6 rounded-xl shadow-lg mb-10 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] animate-fade-in delay-300">
           <h2 id="mission" className="text-2xl font-semibold text-[#WCAGAA] mb-3 text-center">
             Our Mission
           </h2>
-          <p className="text-[16px]">
-            To simplify complex workflows and help businesses grow with
-            technology-driven solutions. We believe in innovation, transparency,
-            and user satisfaction.
+          <p className="text-[18px]">
+            Reduce digital waste through reuse and repair
+          </p>
+          <p className="text-[18px]">
+            Bridge the India-Bharat digital divide
+          </p>
+          <p className="text-[18px]">
+            Advance quality education while saving the environment
           </p>
         </div>
 

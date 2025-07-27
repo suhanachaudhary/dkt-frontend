@@ -10,6 +10,8 @@ const Navbar = () => {
   const navLinks = [
     { path: "/about", label: "About Us" },
     { path: "/how-it-works", label: "How it works" },
+    { path: "/modules", label: "Modules" },
+    { path: "/impact", label: "Impact" },
     { path: "https://digital-k-tech.vercel.app/auth/sign-in", label: "Login" },
     { path: "/contact", label: "Contact Us" },
   ];
@@ -49,7 +51,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <Link to="/get-started">
+            <Link to="https://digital-k-tech.vercel.app/auth/sign-in">
               <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full text-xl transition-all duration-300 hover:scale-105 shadow-md">
                 Donate Now
               </button>

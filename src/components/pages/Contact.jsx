@@ -19,9 +19,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen mt-12 px-6 md:px-20 py-16 text-[#WCAGAA]">
+    <section className="min-h-screen mt-12 px-6 md:px-20 py-16 text-gray-800">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-10">
-        <h1 id="contact" className="md:text-5xl text-4xl font-bold text-[#wcagaa] mb-4 text-center">Contact Us</h1>
+        <h1 id="contact" className="text-4xl md:text-5xl font-bold text-center text-[#WCAGAA] mb-4">Let’s Partner to Power Purpose</h1>
         <p className="text-gray-600 mb-8 text-[16px]">
           Have questions or want to collaborate with us? We'd love to hear from you.
           Fill out the form or use the contact details below.
@@ -78,12 +78,12 @@ const Contact = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-600 mb-1">Email</h3>
-              <p className="text-gray-700 text-[16px]">support@dktplatform.com</p>
+              <p className="text-gray-700 text-[16px]">digitalkprivatelimited@gmail.com</p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-600 mb-1">Phone</h3>
-              <p className="text-gray-700 text-[16px]">+91 9876543210</p>
+              <p className="text-gray-700 text-[16px]">+91 98191 43730 / +91 95940 93430</p>
             </div>
 
             <div>
