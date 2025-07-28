@@ -1,7 +1,7 @@
 
 import { useRef } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaRecycle, FaGlobeAsia, FaGraduationCap } from "react-icons/fa";
 
 const team = [
   {
@@ -52,12 +52,44 @@ const team = [
     twitter: "#",
     instagram: "#",
   },
+  {
+    name: "Isha Sharma",
+    role: "Founder & CEO",
+    image: "/images/about1.jpg",
+    linkedin: "#",
+    twitter: "#",
+    instagram: "#",
+  },
+  {
+    name: "Aman Verma",
+    role: "Lead Developer",
+    image: "/images/abou2.jpg",
+    linkedin: "#",
+    twitter: "#",
+    instagram: "#",
+  },
+  {
+    name: "Neha Kapoor",
+    role: "UI/UX Designer",
+    image: "/images/about3.png",
+    linkedin: "#",
+    twitter: "#",
+    instagram: "#",
+  },
+  {
+    name: "Isha Sharma",
+    role: "Founder & CEO",
+    image: "/images/about1.jpg",
+    linkedin: "#",
+    twitter: "#",
+    instagram: "#",
+  },
 ];
 
 const AboutUs = () => {
 
   const sliderRef = useRef(null);
-  const extendedTeam = [...team, ...team];
+  const extendedTeam = [...team, ...team, ...team];
 
 
   return (
@@ -67,24 +99,39 @@ const AboutUs = () => {
         <h1 id="aboutUs" className="text-4xl md:text-5xl font-bold text-[#WCAGAA] mb-4 animate-fade-in text-center">
           Who We Are
         </h1>
-        <p className="text-[16px] mb-10 leading-relaxed animate-slide-up delay-200">
-          Digital K Tech (DKT) is a mission-driven platform that empowers underserved students and institutions through responsible tech donations, CSR partnerships, and sustainability-first practices.
+        <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto animate-slide-up delay-200">
+          <span className="font-semibold text-gray-700">Digital K Tech (DKT)</span> is a mission-driven platform empowering underserved students and institutions through responsible tech donations, transparent CSR collaborations, and sustainability-first practices.
         </p>
 
-        <div className="bg-white p-6 rounded-xl shadow-lg mb-10 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] animate-fade-in delay-300">
-          <h2 id="mission" className="text-2xl font-semibold text-[#WCAGAA] mb-3 text-center">
-            Our Mission
-          </h2>
-          <p className="text-[18px]">
-            Reduce digital waste through reuse and repair
-          </p>
-          <p className="text-[18px]">
-            Bridge the India-Bharat digital divide
-          </p>
-          <p className="text-[18px]">
-            Advance quality education while saving the environment
-          </p>
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mt-14 animate-fade-in delay-300">
+          {[
+            {
+              icon: <FaRecycle className="text-green-600 text-3xl mb-3" />,
+              title: "Reduce Digital Waste",
+              desc: "We prioritize reuse and repair before recycling, promoting a sustainable circular economy.",
+            },
+            {
+              icon: <FaGlobeAsia className="text-green-600 text-3xl mb-3" />,
+              title: "Bridge the Digital Divide",
+              desc: "Connecting the India-Bharat gap by delivering tech access to remote and rural schools.",
+            },
+            {
+              icon: <FaGraduationCap className="text-green-600 text-3xl mb-3" />,
+              title: "Advance Quality Education",
+              desc: "Empowering learning outcomes while contributing to environmental conservation.",
+            },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 text-center"
+            >
+              {item.icon}
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">{item.title}</h3>
+              <p className="text-[16px] text-gray-600 leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
         </div>
+
 
         <section className="py-20 px-2 md:px-20">
           <h2 id="team" className="text-3xl text-center font-semibold text-[#WCAGAA] mb-6 animate-fade-in delay-400">
@@ -113,7 +160,6 @@ const AboutUs = () => {
                 <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
                 <p className="text-[16px] text-gray-600 mb-4">{member.role}</p>
 
-                {/* Social icons */}
                 <div className="flex justify-center gap-4 text-gray-500 group-hover:text-gray-700 text-xl transition">
                   <a
                     href={member.linkedin}
@@ -146,11 +192,11 @@ const AboutUs = () => {
         </section>
 
 
-        <p className="text-center text-sm text-gray-500 mt-16 animate-fade-in delay-500">
+        <p className="text-center text-[16px] text-gray-500 mt-16 animate-fade-in delay-500">
           Empowering innovation, one solution at a time. 💡
         </p>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 

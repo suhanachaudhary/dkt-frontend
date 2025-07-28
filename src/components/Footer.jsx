@@ -15,9 +15,9 @@ const Footer = () => {
               <img
                 src="/images/logo103-removebg-preview.png"
                 alt="DKT Logo"
-                className="w-18 h-14"
+                className="w-22 h-14"
               />
-              <span id="logo" className="font-semibold text-lg text-white">Digital K</span>
+              <span id="logo" className="font-semibold text-xl text-white">Digital K</span>
             </Link>
           </div>
           <p className="text-[16px] leading-relaxed text-gray-400 hover:text-gray-300 transition">

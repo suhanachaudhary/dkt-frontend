@@ -28,9 +28,9 @@ const Navbar = () => {
               <img
                 src="/images/logo103.PNG"
                 alt="DKT Logo"
-                className="w-18 h-14"
+                className="w-22 h-14"
               />
-              <span id="logo" className="font-semibold text-lg text-gray-900">Digital K</span>
+              <span id="logo" className="font-semibold text-xl text-gray-900">Digital K</span>
             </Link>
           </div>
 

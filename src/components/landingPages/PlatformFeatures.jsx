@@ -81,19 +81,26 @@ const PlatformFeatures = () => {
       </h2>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute left-0 top-0 bottom-0 w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent" />
+
+        <div className="absolute right-0 top-0 bottom-0 w-16 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent" />
+
         <Slider {...sliderSettings}>
           {features.map((item, index) => (
-            <div key={index} className="px-4 w-full box-border">
-              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform  h-full">
-                <div className="w-14 h-14 mb-4 bg-gray-100 rounded-full flex items-center justify-center mx-auto transition">
-                  <div className="bg-gray-500 p-3 rounded-full shadow group-hover:scale-110 transition-transform">
+            <div key={index} className="px-6 w-full box-border">
+              <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform h-full flex flex-col items-center">
+
+                <div className="w-16 h-16 mb-6 bg-[#E6F4EA] rounded-full flex items-center justify-center shadow-inner transition-all">
+                  <div className="bg-green-600 p-3 rounded-full text-white text-xl group-hover:scale-110 transition-transform duration-200">
                     {item.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-[#WCAGAA] text-center mb-2 transition">
+
+                <h3 className="text-2xl font-semibold text-gray-700 text-center mb-3 group-hover:text-green-700 transition">
                   {item.title}
                 </h3>
-                <p className="text-[16px] text-gray-600 text-center group-hover:text-gray-700 transition">
+
+                <p className="text-[16px] text-gray-600 text-center group-hover:text-gray-700 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -101,6 +108,7 @@ const PlatformFeatures = () => {
           ))}
         </Slider>
       </div>
+
     </section>
   );
 };
